@@ -4,7 +4,7 @@ Projeto de testes automatizados com Pytest + Playwright usando Page Object Model
 
 ## Instalação
 ```bash
-Baixe o repositório e execute o arquivo Setup.bat, ele fará todo o necessário para executar os testes.
+Baixe ou clone o repositório e execute o arquivo Setup.bat, ele fará todo o necessário para executar os testes.
 
 - Verifica se o Python existe.
 - Instala Python se necessário.
@@ -13,7 +13,7 @@ Baixe o repositório e execute o arquivo Setup.bat, ele fará todo o necessário
 - Cria o arquivo .env na raiz do projeto.
 - Cria/ativa um ambiente virtual.
 - Instala dependências.
-- Instala os browsers do Playwright
+- Instala Playwright e seus browsers se necessário.
 ```
 
 ## Execução
