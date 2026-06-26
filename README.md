@@ -1,27 +1,24 @@
 # Serasa Playwright POM
 
-Projeto corrigido de testes automatizados com Pytest + Playwright usando Page Object Model para cenários básicos de E2E e API.
+Projeto de testes automatizados com Pytest + Playwright usando Page Object Model para cenários básicos de E2E e API.
 
 ## Instalação
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python -m playwright install
-```
+Baixe o repositório e execute o arquivo Setup.bat, ele fará todo o necessário para executar os testes.
 
-## .env
-Crie um arquivo `.env` na raiz do projeto:
-```env
-SERASA_CPF=seu_cpf
-SERASA_PASSWORD=sua_senha
-BASE_URL=https://www.serasa.com.br/entrar
+- Verifica se o Python existe.
+- Instala Python se necessário.
+- Verifica pip e o instala se necessário.
+- Pede ao usuário para digitar um CPF válido para teste.
+- Cria o arquivo .env na raiz do projeto.
+- Cria/ativa um ambiente virtual.
+- Instala dependências.
+- Instala os browsers do Playwright
 ```
 
 ## Execução
 ```bash
-pytest
-pytest -m e2e
-pytest -m api
-pytest -m smoke
+pytest (executa ambos os testes)
+pytest -m e2e (executa apenas testes e2e)
+pytest -m api (executa paenas testes de api)
 ```
